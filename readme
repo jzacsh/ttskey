@@ -1,1 +1,12 @@
-an effort to make a useful hot-key based set of utilities for TTS.
+An effort to make TTS in Ubuntu, for highlighted text, much easier. This is
+really just a wrapper around some disparet existing tools in GNU/Linux for a
+particular use-case.
+
+@TODO
+- write a gnome(v2) applet (see applet/) to change `espeak` speed on the fly
+  eg.: call bin/tts_{pause,resume} accordingly as events are emitted for
+  integer changes by the user moving the slider, just like the volume applet in
+  GNOME.
+- write an install script to initalize bin/tts_xsel and bin/tts_pause to ALT+s
+  and ALT+SHIFT+s, respectively (find documention for `gnome-keybinding-properties`).
+
