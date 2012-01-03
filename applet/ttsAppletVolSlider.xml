@@ -1,0 +1,3 @@
+<oaf_server iid="OAFIID:TTSKeyVolumeSlider"
+  type="exe"
+  location="/usr/local/bin/ttsapplet_vol_slider.py">
