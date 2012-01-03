@@ -7,6 +7,6 @@ particular use-case.
   eg.: call bin/tts_{pause,resume} accordingly as events are emitted for
   integer changes by the user moving the slider, just like the volume applet in
   GNOME.
-- write an install script to initalize bin/tts_xsel and bin/tts_pause to ALT+s
-  and ALT+SHIFT+s, respectively (find documention for `gnome-keybinding-properties`).
+- write an install script to initialize bin/tts_xsel and bin/tts_pause to ALT+s
+  and ALT+SHIFT+s, respectively (find documentation for `gnome-keybinding-properties`).
 
