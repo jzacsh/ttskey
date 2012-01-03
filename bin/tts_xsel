@@ -6,9 +6,11 @@
 # author: Jonathan Zacsh <jzacsh@gmail.com>
 #
 
-TTS_CURRENT=${TTS_CURRENT:-~/.tts_current}
-#@TODO: write a tiny gnome-panel speed-dial quick-dropdown to allow changing `-s` to espeak
-TTS_SPEED="${TTS_SPEED:-160}" #use espeak(1) default
+#get our own defaults for ttskey
+[[ -r /etc/ttskey.conf ]] && source /etc/ttskey.conf
+#allow stored conf to overwrite defaluts
+[[ -r $TTS_CONFIG ]] && source $TTS_CONFIG
+###########################################
 
 current_pid=0
 speak () {

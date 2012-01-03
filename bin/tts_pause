@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-#for more on assumptions made by this script, see ~/bin/share/tts_xsel
-TTS_CURRENT=${TTS_CURRENT:-~/.tts_current}
+#get our own defaults for ttskey
+[[ -r /etc/ttskey.conf ]] && source /etc/ttskey.conf
+#allow stored conf to overwrite defaluts
+[[ -r $TTS_CONFIG ]] && source $TTS_CONFIG
 
 #runs resume for us, assuming a particular behavior of users with "pause"
 # buttons
