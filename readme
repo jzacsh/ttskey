@@ -23,4 +23,6 @@ particular use-case.
 
 - write an install script to initialize bin/tts_xsel and bin/tts_pause to ALT+s
   and ALT+SHIFT+s, respectively (find documentation for `gnome-keybinding-properties`).
-
+- find out what `gespeaker` utility configures/runs on its installation that makes `espeak`
+  so much more usable (eg.: being called seemlessly across windows, regardless of which
+  called it).
