@@ -10,7 +10,7 @@ TTS_CURRENT=${TTS_CURRENT:-~/.tts_current}
 #@TODO: write a tiny gnome-panel speed-dial quick-dropdown to allow changing `-s` to espeak
 TTS_SPEED="${TTS_SPEED:-160}" #use espeak(1) default
 
-current=0
+current_pid=0
 speak () {
   #stop other TTS audio running
   kill $(< "$TTS_CURRENT") 2> /dev/null && sleep 0.5
@@ -19,12 +19,12 @@ speak () {
   xsel -o | espeak -s "$TTS_SPEED" -v en --stdin &
 
   #track current TTS
-  current="$!"
+  current_pid="$!"
 }
 
 #start TTS
 speak
 
 #store current TTS process
-echo -n "$current" > "$TTS_CURRENT"
+echo -n "$current_pid" > "$TTS_CURRENT"
 
