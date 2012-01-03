@@ -3,8 +3,8 @@ really just a wrapper around some disparate existing tools in GNU/Linux for a
 particular use-case.
 
 @TODO
-- write a gnome(v2) applet (see applet/) to change `espeak` speed on the fly
-  eg.: call bin/tts_{pause,resume} accordingly as events are emitted for
+- write a gnome(v2) applet (see applet/) to change `espeak` speed (-s) on the
+  fly. eg.: call bin/tts_{pause,resume} accordingly as events are emitted for
   integer changes by the user moving the slider, just like the volume applet in
   GNOME.
 - write an install script to initialize bin/tts_xsel and bin/tts_pause to ALT+s
